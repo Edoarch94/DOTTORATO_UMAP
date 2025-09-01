@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Scheda — Elmo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, sans-serif; background:#f7f7f7; margin:0; padding:20px; }
+    .card { max-width: 820px; margin:auto; background:#fff; padding:24px; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,.1); }
+    h1 { margin:0 0 12px; font-size:24px; color:#222; }
+    .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .field { margin: 0 0 14px; }
+    .field b { display:block; margin:0 0 6px; color:#444; }
+    .field p { margin:0; line-height:1.55; color:#222; white-space:pre-wrap; }
+    .muted { color:#666; font-size:12px; }
+    .preview-box { position:relative; border-radius:12px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,.18); background:#111; }
+    .preview-box img { display:block; width:100%; height:auto; }
+    .aspect { width:100%; aspect-ratio:16/9; }
+    .aspect iframe { width:100%; height:100%; border:0; }
+    .overlay { position:absolute; inset:0; display:block; }
+    @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="card" role="article" aria-label="Scheda sito">
+    <h1>Elmo</h1>
+
+    <div class="grid">
+      <div>
+        <div class="field"><b>Tipologia</b><p>[Inserisci tipologia]</p></div>
+        <div class="field"><b>Stato di Conservazione</b><p>[Inserisci stato di conservazione]</p></div>
+        <div class="field"><b>Cronologia</b><p>[Inserisci cronologia]</p></div>
+      </div>
+      <div>
+        <div class="field"><b>Riferimento fotografico</b>
+          <img src="https://edoarch94.github.io/DOTTORATO_UMAP/elmo.jpg?v=1" alt="Riferimento fotografico">
+          <p class="muted">Carica nella repo un file chiamato <code>elmo.jpg</code> come anteprima fotografica.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <b>Toponimo</b><p>Elmo</p>
+    </div>
+
+    <div class="field">
+      <b>Descrizione</b><p>[Inserisci descrizione]</p>
+    </div>
+
+    <div class="field">
+      <b>Note</b><p>[Inserisci eventuali note]</p>
+    </div>
+
+    <!-- ─────────── SEZIONE: MODELLO 3D ─────────── -->
+    <div class="field">
+      <b>Modello 3D</b>
+
+      <!-- Variante A: preview immagine -->
+      <div class="preview-box" style="margin:8px 0 12px;">
+        <a class="overlay" href="https://edoarch94.github.io/DOTTORATO_UMAP/modello_elmo.html?v=1" target="_blank" title="Apri il modello 3D"></a>
+        <img src="https://edoarch94.github.io/DOTTORATO_UMAP/elmo.jpg?v=1" alt="Anteprima modello 3D">
+      </div>
+
+      <!-- Variante B: preview interattiva Sketchfab -->
+      <div class="preview-box aspect" style="margin-top:8px;">
+        <iframe
+          src="https://sketchfab.com/models/672b51ab7e91426aa8965615090c57e9/embed?autostart=1&autospin=0.2&ui_infos=0&ui_controls=0&ui_annotations=0"
+          title="Anteprima 3D"
+          allow="autoplay; fullscreen; xr-spatial-tracking"
+          loading="lazy">
+        </iframe>
+        <a class="overlay" href="https://edoarch94.github.io/DOTTORATO_UMAP/modello_elmo.html?v=1" target="_blank" title="Apri modello 3D"></a>
+      </div>
+    </div>
+
+    <p>
+      <a href="https://edoarch94.github.io/DOTTORATO_UMAP/modello_elmo.html?v=1" target="_blank">
+        👉 Apri il modello 3D interattivo
+      </a>
+    </p>
+  </div>
+</body>
+</html>
